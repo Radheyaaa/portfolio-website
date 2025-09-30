@@ -279,6 +279,7 @@ nav {
 }
 
 .projects__card {
+  aspect-ratio: 16/9;
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
