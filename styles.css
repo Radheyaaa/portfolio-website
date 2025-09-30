@@ -279,11 +279,55 @@ nav {
 }
 
 .projects__card {
-  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  background: #fff;
+  margin: 15px;
 }
+
+.project-image {
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.1); /* efek zoom in */
+}
+
+.project-desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.project-desc a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-desc h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-desc p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+
+
 
 .projects__card img {
   transition: 0.5s;
