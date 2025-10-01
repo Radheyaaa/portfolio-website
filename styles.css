@@ -255,6 +255,13 @@ nav {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.skills__card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #075cb8, #00323c);
+  color: #fff;
+}
+
 .skills__card span {
   display: inline-block;
   margin-bottom: 1rem;
@@ -286,6 +293,10 @@ nav {
   transition: transform 0.3s ease;
   background: #fff;
   margin: 15px;
+}
+
+.projects__card:hover {
+  transform: scale(1.05) rotate3d(1, 1, 0, 5deg);
 }
 
 .project-image {
