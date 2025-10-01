@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+/*  tempat utama buat nyimpen variabel CSS yang bisa dipakai di mana aja. 
+Lebih gampang diubah (cukup ubah sekali, semua ikut berubah) dan bikin kode lebih rapi */
 :root {
   --primary-color: #82b7ef;
   --secondary-color: #496c93;
@@ -84,6 +86,130 @@ body {
   color: var(--white);
   background-image: var(--gradient-1);
 }
+
+body,
+nav,
+section,
+footer {
+  transition: background 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+  background: #181818;
+  color: #f1f1f1;
+}
+
+body.dark-mode footer {
+  background: #222;
+  color: #f1f1f1;
+}
+
+body.dark-mode .btn,
+body.dark-mode button,
+body.dark-mode .projects__card,
+body.dark-mode .skills__card {
+  background: #333;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode button:hover {
+  background: #444;
+  color: #ffffff;
+}
+
+/* Navbar bar dan menu button di dark mode */
+body.dark-mode .nav__menu__btn {
+  background: #181818;
+  color: #f1f1f1;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Navbar links (menu mobile) di dark mode */
+body.dark-mode .nav__links.open {
+  background: #181818;
+  color: #f1f1f1;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Navbar link text di dark mode */
+body.dark-mode .nav__links a {
+  color: #f1f1f1;
+}
+
+
+/* Logo R di nav dan contact */
+body.dark-mode .logo,
+body.dark-mode .nav__logo {
+  background: #ffffff;
+  color: #181818;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Statistik project banner */
+body.dark-mode .projects__banner__card {
+ 
+  color: #ffffff;
+  border-color: #444;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Teks deskripsi pada project card */
+body.dark-mode .projects__card .project-desc p {
+  color: #ffffff;
+  transition: color 0.4s;
+}
+
+body.dark-mode .projects__card {
+  background: #444;
+  border-color: #444;
+}
+
+/* Judul h3 pada project card */
+body.dark-mode .projects__card h3 {
+  color: #fff3f3;
+}
+
+body.dark-mode .projects__banner {
+  background: #444;
+  transition: background 0.4s;
+}
+
+#darkModeToggle {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #222;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Dark mode style untuk tombol */
+body.dark-mode #darkModeToggle {
+  background: #222;
+  color: #ffd700;
+}
+
+/* Animasi icon */
+#darkModeToggle i {
+  transition: transform 0.4s;
+}
+body.dark-mode #darkModeToggle i.ri-sun-line {
+  transform: rotate(180deg);
+}
+
 
 nav {
   position: fixed;
@@ -522,5 +648,20 @@ nav {
 
   .projects__banner {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .projects__container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .projects__card {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

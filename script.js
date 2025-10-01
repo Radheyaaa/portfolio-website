@@ -81,3 +81,32 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
+
+
+// ...existing code...
+const toggle = document.getElementById('darkModeToggle');
+const icon = toggle.querySelector('i');
+
+toggle.addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  if(document.body.classList.contains('dark-mode')) {
+    icon.classList.remove('ri-moon-line');
+    icon.classList.add('ri-sun-line');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    icon.classList.remove('ri-sun-line');
+    icon.classList.add('ri-moon-line');
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// Saat halaman dibuka, cek preferensi
+if(localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  icon.classList.remove('ri-moon-line');
+  icon.classList.add('ri-sun-line');
+} else {
+  icon.classList.remove('ri-sun-line');
+  icon.classList.add('ri-moon-line');
+}
+// ...existing code...
