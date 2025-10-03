@@ -109,4 +109,42 @@ if(localStorage.getItem('theme') === 'dark') {
   icon.classList.remove('ri-sun-line');
   icon.classList.add('ri-moon-line');
 }
-// ...existing code...
+
+
+// Tab switching
+const tabSkills = document.getElementById('tab-skills');
+const tabCert = document.getElementById('tab-cert');
+const skillsContent = document.getElementById('skills-content');
+const certContent = document.getElementById('cert-content');
+
+tabSkills.addEventListener('click', () => {
+  tabSkills.classList.add('active');
+  tabCert.classList.remove('active');
+  skillsContent.style.display = 'block';
+  certContent.style.display = 'none';
+});
+tabCert.addEventListener('click', () => {
+  tabCert.classList.add('active');
+  tabSkills.classList.remove('active');
+  skillsContent.style.display = 'none';
+  certContent.style.display = 'block';
+});
+
+// Modal Sertifikat
+const certImgs = document.querySelectorAll('.cert__img');
+const certModal = document.getElementById('cert-modal');
+const certModalImg = document.getElementById('cert-modal-img');
+const certClose = document.getElementById('cert-close');
+
+certImgs.forEach(img => {
+  img.addEventListener('click', (e) => {
+    certModal.style.display = 'flex';
+    certModalImg.src = img.dataset.img;
+  });
+});
+certClose.addEventListener('click', () => {
+  certModal.style.display = 'none';
+});
+certModal.addEventListener('click', (e) => {
+  if (e.target === certModal) certModal.style.display = 'none';
+});

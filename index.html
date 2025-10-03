@@ -6,7 +6,6 @@
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -41,8 +40,9 @@
           <h1><br />Radheya<br />Devananda</h1>
         </div>
         <p class="section__description">
-          Hellow!, I'm I Gede Radheya Devananda, an Information Systems student at Ganesha University of Education. 
-          I have a strong interest in programming and information systems.
+          Hellow!, I'm I Gede Radheya Devananda, an Information Systems student
+          at Ganesha University of Education. I have a strong interest in
+          programming and information systems.
         </p>
         <div class="header__btn">
           <a href="#about">
@@ -61,14 +61,21 @@
       <div class="about__content">
         <h2 class="section__header">Bit About Me</h2>
         <p class="section__description">
-          I’m an Information Systems student with a background in Software Engineering. 
-          During high school, I learned how to build websites, apps, and games, which sparked my interest in programming. 
-          Now, I’m continuing that journey at university with a focus on expanding my skills in coding, 
-          problem-solving, and system development. 
-          I’m passionate about technology and aspire to become a professional programmer who can create solutions that are not only functional but also impactful.
+          I’m an Information Systems student with a background in Software
+          Engineering. During high school, I learned how to build websites,
+          apps, and games, which sparked my interest in programming. Now, I’m
+          continuing that journey at university with a focus on expanding my
+          skills in coding, problem-solving, and system development. I’m
+          passionate about technology and aspire to become a professional
+          programmer who can create solutions that are not only functional but
+          also impactful.
         </p>
         <div class="about__btn">
-          <a href="assets/CV_I Gede Radheya Devananda.pdf" download="CV_I Gede Radheya Devananda" class="btn">
+          <a
+            href="assets/CV_I Gede Radheya Devananda.pdf"
+            download="CV_I Gede Radheya Devananda"
+            class="btn"
+          >
             Download CV
           </a>
         </div>
@@ -76,49 +83,162 @@
     </section>
 
     <section class="section__container skills__container" id="skills">
-      <h2 class="section__header">My Skills</h2>
-      <div class="skills__grid">
-        <div class="skills__card">
-          <span><i class="ri-code-fill"></i></span>
-          <h4>Programming Language</h4>
-          <p>
-            Java, Python, C/C++
-          </p>
+      <h2 class="section__header">Skills & Certifications</h2>
+      <div class="skills__tabs">
+        <button class="skills__tab active" id="tab-skills">Skills</button>
+        <button class="skills__tab" id="tab-cert">Certifications</button>
+      </div>
+      <div class="skills__content" id="skills-content">
+        <div class="skills__grid">
+          <div class="skills__card">
+            <span><i class="ri-code-fill"></i></span>
+            <h4>Programming Language</h4>
+            <p>Java, Python, C/C++</p>
+          </div>
+          <div class="skills__card">
+            <span><i class="ri-database-line"></i></span>
+            <h4>Database</h4>
+            <p>MySQL</p>
+          </div>
+          <div class="skills__card">
+            <span><i class="ri-window-line"></i></span>
+            <h4>Web Development</h4>
+            <p>HTML, CSS, JavaScript.</p>
+          </div>
+          <div class="skills__card">
+            <span><i class="ri-tools-fill"></i></span>
+            <h4>Tools/Software</h4>
+            <p>GitHub, Visual Studio Code, NetBeans, IntelliJ IDEA</p>
+          </div>
+          <div class="skills__card">
+            <span><i class="ri-seo-line"></i></span>
+            <h4>Problem Solving</h4>
+            <p>
+              Analyze problems and find solutions through programming logic and
+              algorithms.
+            </p>
+          </div>
+          <div class="skills__card">
+            <span><i class="ri-share-circle-line"></i></span>
+            <h4>Soft Skills</h4>
+            <p>Communication, teamwork, adaptability, and time management.</p>
+          </div>
         </div>
-        <div class="skills__card">
-          <span><i class="ri-database-line"></i></span>
-          <h4>Database</h4>
-          <p>
-            MySQL
-          </p>
-        </div>
-        <div class="skills__card">
-          <span><i class="ri-window-line"></i></span>
-          <h4>Web Development</h4>
-          <p>
-            HTML, CSS, JavaScript.
-          </p>
-        </div>
-        <div class="skills__card">
-          <span><i class="ri-tools-fill"></i></span>
-          <h4>Tools/Software</h4>
-          <p>
-            GitHub, Visual Studio Code, NetBeans, IntelliJ IDEA
-          </p>
-        </div>
-        <div class="skills__card">
-          <span><i class="ri-seo-line"></i></span>
-          <h4>Problem Solving</h4>
-          <p>
-            Analyze problems and find solutions through programming logic and algorithms.
-          </p>
-        </div>
-        <div class="skills__card">
-          <span><i class="ri-share-circle-line"></i></span>
-          <h4>Soft Skills</h4>
-          <p>
-            Communication, teamwork, adaptability, and time management.
-          </p>
+      </div>
+      <div class="cert__content" id="cert-content" style="display: none">
+        <div class="cert__grid">
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/NVP7J883OXR0"
+              target="_blank"
+            >
+              <img
+                src="assets/Sertifikat Java.jpg"
+                alt="Sertifikat Pemrograman Java"
+                class="cert__img"
+                data-img="assets/cert1.jpg"
+              />
+              <h4>Dicoding: Memulai Pemrograman Dengan Java</h4>
+            </a>
+          </div>
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/98XWOVD2LZM3"
+              target="_blank"
+            >
+              <img
+                src="assets/Sertifikat C.jpg"
+                alt="Sertifikat Pemrograman C"
+                class="cert__img"
+                data-img="assets/cert2.jpg"
+              />
+              <h4>Dicoding: Memulai Pemrograman Dengan C</h4>
+            </a>
+          </div>
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/L4PQ2G962ZO1"
+              target="_blank"
+            >
+              <img
+                src="assets/Sertifikat Manajemen Proyek.jpg"
+                alt="Sertifikat Manajemen Proyek"
+                class="cert__img"
+                data-img="assets/cert3.jpg"
+              />
+              <h4>Dicoding: Belajar Dasar Manajemen Proyek</h4>
+            </a>
+          </div>
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/YYYY"
+              target="_blank"
+            >
+              <img
+                src="assets/project-5.jpg"
+                alt="Sertifikat Manajemen Proyek"
+                class="cert__img"
+                data-img="assets/cert4.jpg"
+              />
+              <h4>Dicoding: Memulai Pemrograman Dengan Java</h4>
+            </a>
+          </div>
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/YYYY"
+              target="_blank"
+            >
+              <img
+                src="assets/project-5.jpg"
+                alt="Sertifikat 2"
+                class="cert__img"
+                data-img="assets/cert5.jpg"
+              />
+              <h4>Dicoding: Memulai Pemrograman Dengan Java</h4>
+            </a>
+          </div>
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/YYYY"
+              target="_blank"
+            >
+              <img
+                src="assets/project-5.jpg"
+                alt="Sertifikat 2"
+                class="cert__img"
+                data-img="assets/cert6.jpg"
+              />
+              <h4>Dicoding: Memulai Pemrograman Dengan Java</h4>
+            </a>
+          </div>
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/YYYY"
+              target="_blank"
+            >
+              <img
+                src="assets/project-5.jpg"
+                alt="Sertifikat 2"
+                class="cert__img"
+                data-img="assets/cert2.jpg"
+              />
+              <h4>Dicoding: Memulai Pemrograman Dengan Java</h4>
+            </a>
+          </div>
+          <div class="cert__card">
+            <a
+              href="https://www.dicoding.com/certificates/YYYY"
+              target="_blank"
+            >
+              <img
+                src="assets/project-5.jpg"
+                alt="Sertifikat 2"
+                class="cert__img"
+                data-img="assets/cert2.jpg"
+              />
+              <h4>Dicoding: Memulai Pemrograman Dengan Java</h4>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -126,43 +246,54 @@
     <section class="section__container projects__container" id="projects">
       <h2 class="section__header">Work I’ve Done</h2>
       <p class="section__description">
-        Here are some of the projects I’ve worked on during my studies and personal learning journey. 
-        Each project reflects my interest in programming, problem solving, 
-        and creating solutions.
+        Here are some of the projects I’ve worked on during my studies and
+        personal learning journey. Each project reflects my interest in
+        programming, problem solving, and creating solutions.
       </p>
       <div class="projects__grid">
         <div class="projects__card">
           <div class="project-image">
-            <img src="assets/project-1.png" alt="Project 1">
+            <img src="assets/project-1.png" alt="Project 1" />
           </div>
-        <div class="project-desc">
-          <a href="https://radheyaaa.github.io/portfolio-website/" target="_blank">
-            <h3>Portfolio Website</h3>
-          </a>
-            <p>Website pribadi untuk menampilkan profil, skill, dan projek saya.</p>
-        </div>
+          <div class="project-desc">
+            <a
+              href="https://radheyaaa.github.io/portfolio-website/"
+              target="_blank"
+            >
+              <h3>Portfolio Website</h3>
+            </a>
+            <p>
+              Website pribadi untuk menampilkan profil, skill, dan projek saya.
+            </p>
+          </div>
         </div>
         <div class="projects__card">
           <div class="project-image">
-            <img src="assets/project-2.png" alt="Project 2">
+            <img src="assets/project-2.png" alt="Project 2" />
           </div>
-        <div class="project-desc">
-          <a href="https://radheyaaa.github.io/historical-web/" target="_blank">
-            <h3>Historical Website</h3>
-            <p>Website sejarah sederhana dengan HTML, CSS, dan sedikit JavaScript.</p>
-          </a>
-        </div>
+          <div class="project-desc">
+            <a
+              href="https://radheyaaa.github.io/historical-web/"
+              target="_blank"
+            >
+              <h3>Historical Website</h3>
+              <p>
+                Website sejarah sederhana dengan HTML, CSS, dan sedikit
+                JavaScript.
+              </p>
+            </a>
+          </div>
         </div>
         <div class="projects__card">
           <div class="project-image">
-            <img src="assets/project-3.png" alt="Project 3">
+            <img src="assets/project-3.png" alt="Project 3" />
           </div>
-        <div class="project-desc">
-          <a href="https://dev-cloud.site/" target="_blank">
-            <h3>Cloud Service</h3>
-          </a>
+          <div class="project-desc">
+            <a href="https://dev-cloud.site/" target="_blank">
+              <h3>Cloud Service</h3>
+            </a>
             <p>Layanan cloud storage mandiri berbasis Nextcloud.</p>
-        </div>
+          </div>
         </div>
         <!-- <div class="projects__card">
           <div class="project-image">
@@ -206,7 +337,7 @@
         </div>
         <div class="projects__banner__card">
           <span><i class="ri-file-list-2-line"></i></span>
-          <h4>3+ Certifications</h4>
+          <h4>5+ Certifications</h4>
           <p>Earned</p>
         </div>
         <div class="projects__banner__card">
@@ -221,15 +352,29 @@
       <div class="logo">R</div>
       <h2 class="section__header">Let's Talk With Me!</h2>
       <p class="section__description">
-        Feel free to reach out if you’d like to collaborate, discuss a project, or just connect. 
-        I’m always open to new opportunities and conversations.
+        Feel free to reach out if you’d like to collaborate, discuss a project,
+        or just connect. I’m always open to new opportunities and conversations.
       </p>
       <div class="contact__socials">
-        <a href="https://www.instagram.com/radheyadvn/" target="_blank"><i class="ri-instagram-fill"></i></a>
-        <a href="https://www.linkedin.com/in/i-gede-radheya-devananda-0a336631b?" target="_blank"><i class="ri-linkedin-fill"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=6287743358566&text=Halo%20saya%20tertarik%20dengan%20portofolio%20Anda" target="_blank"><i class="ri-whatsapp-fill"></i></a>
-        <a href="mailto:devanandaigederadheya@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
-        <a href="https://github.com/Radheyaaa" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://www.instagram.com/radheyadvn/" target="_blank"
+          ><i class="ri-instagram-fill"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/i-gede-radheya-devananda-0a336631b?"
+          target="_blank"
+          ><i class="ri-linkedin-fill"></i
+        ></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=6287743358566&text=Halo%20saya%20tertarik%20dengan%20portofolio%20Anda"
+          target="_blank"
+          ><i class="ri-whatsapp-fill"></i
+        ></a>
+        <a href="mailto:devanandaigederadheya@gmail.com" target="_blank"
+          ><i class="ri-mail-line"></i
+        ></a>
+        <a href="https://github.com/Radheyaaa" target="_blank"
+          ><i class="ri-github-line"></i
+        ></a>
       </div>
     </section>
     <footer class="footer">
@@ -240,4 +385,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
