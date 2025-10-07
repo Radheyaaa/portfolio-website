@@ -546,6 +546,17 @@ body.dark-mode .cert__close {
   color: #fff;
 }
 
+.project__quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #eee;
+  margin: 1rem 0;
+  letter-spacing: 1px;
+}
+body.dark-mode .project__quote {
+  color: #ffffff;
+}
 
 .projects__grid {
   margin-top: 2rem;
