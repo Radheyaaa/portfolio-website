@@ -433,16 +433,25 @@ nav {
 .cert__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  /* jangan biarkan kolom mengembang penuh; gunakan max fixed agar baris yang tidak penuh bisa dipusatkan */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px)); /*hapus ini jika sudah 8 sertif*/
   gap: 1.5rem;
   width: 100%;
+  max-width: 1100px; /* batasi lebar keseluruhan grid supaya terlihat terpusat */ /*hapus ini jika sudah 8 sertif*/
   margin: 0 auto;
   padding: 1rem 0;
+  justify-content: center; /* pusatkan keseluruhan grid saat ada ruang kosong di baris */ /*hapus ini jika sudah 8 sertif*/
+  justify-items: center; /*hapus ini jika sudah 8 sertif*/
 }
 
 /* Sertifikat Card */
 .cert__card {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 1rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 320px; /* mencegah card mengembang berlebihan sehingga baris dapat terpusat */ /*hapus ini jika sudah 8 sertif*/
   background: var(--white);
   border-radius: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
